@@ -193,6 +193,7 @@ ul {
   flex-grow: 1;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin: 0 auto;
 }
 
 .section-hero {
@@ -219,13 +220,10 @@ ul {
   /* visibility: hidden; */
 }
 
-.text-peculiarities {
-  width: 270px;
-}
-
 .section-hero .button {
   font-size: 16px;
   line-height: 1.875;
+  font-weight: 700;
   color: var(--text-color);
   background-color: var(--accent-color);
 }
@@ -237,9 +235,22 @@ ul {
   margin-bottom: 50px;
   text-align: center;
 }
+
+/* -----------------peculiarities------------ */
+
+.text-peculiarities {
+  width: 270px;
+}
+
 .icon-peculiarities {
+  width: 270px;
+  height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-bg-color);
 }
 
 .section-peculiarities {
@@ -268,6 +279,8 @@ ul {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+
+/* ---------------WORKS-------------- */
 .section-works .container {
   display: block;
 }
@@ -279,7 +292,7 @@ ul {
 .section-works .item:not(:last-child) {
   margin-right: 30px;
 }
-
+/* ----------------COMAND------------------- */
 .section-command {
   background-color: rgb(240, 240, 250);
   padding-top: 94px;
@@ -324,6 +337,7 @@ ul {
 .comand-list {
   display: flex;
   justify-content: center;
+  fill: var(--fill-clients-color);
 }
 .comand-social-link {
   width: 100%;
@@ -337,12 +351,12 @@ ul {
 .comand-social-link:hover,
 .comand-social-link:focus {
   background-color: var(--accent-color);
-  fill: var(--text-color);
+  fill: var(--fill-clients-color);
 }
 .comand-socials-icon {
   width: 20px;
   height: 20px;
-  fill: var(--secondary-text-color);
+  fill: var(--fill-clients-color);
 }
 
 .comand-social-item:not(:last-child) {
@@ -371,8 +385,10 @@ ul {
 }
 .ln-clients:not(:last-child) {
   margin-right: 30px;
+  /* fill: var(--fill-clients-color); */
 }
-.link-clients:hover .clients {
+.link-clients:hover .clients,
+.link-clients:focus .clients {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
@@ -391,7 +407,7 @@ ul {
 }
 .footer .container {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 .section-footer {
   padding-top: 60px;
@@ -407,10 +423,10 @@ ul {
   color: var(--text-color);
   marging-bottom: 20px;
 }
-.footer .logo:hover,
+/* .footer .logo:hover,
 .footer .logo:focus {
   color: var(--accent-color);
-}
+} */
 
 .footer .address {
   display: inline-block;
@@ -483,7 +499,7 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   color: var(--text-color);
 }
 /* ----------------PORTFOLIO---------- */
